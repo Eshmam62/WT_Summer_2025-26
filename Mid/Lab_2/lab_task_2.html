@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Student Service Portal">
+
+    <title>Student Service Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <center>
+            <h1>Student Service Portal</h1>
+            <p>
+                Welcome to the Student Affairs Department.
+                Submit your service requests quickly and easily.
+            </p>
+        </center>
+
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Services</a> |
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Available Student Services</h2>
+
+            <p>
+                The Student Affairs Department provides several student
+                services including Transcript Requests, ID Card Issues,
+                and General Inquiries. Fill out the form below to submit
+                your request.
+            </p>
+
+        </section>
+
+        <section>
+
+            <center>
+                <h2>Service Request Form</h2>
+            </center>
+
+            <form action="#" method="post">
+
+                <label for="name">Student Name</label><br>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <br><br>
+
+                <label for="studentid">Student ID</label><br>
+                <input type="text"
+                       id="studentid"
+                       name="studentid"
+                       maxlength="10"
+                       required>
+
+                <br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+                <label for="service">Service Type</label><br>
+
+                <select id="service" name="service">
+
+                    <option value="">Select a Service</option>
+                    <option value="Transcript Request">
+                        Transcript Request
+                    </option>
+
+                    <option value="ID Card Issue">
+                        ID Card Issue
+                    </option>
+
+                    <option value="General Inquiry">
+                        General Inquiry
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label>Urgency Level</label><br>
+
+                <input type="radio"
+                       id="low"
+                       name="urgency"
+                       value="Low">
+
+                <label for="low">Low</label>
+
+                <input type="radio"
+                       id="medium"
+                       name="urgency"
+                       value="Medium">
+
+                <label for="medium">Medium</label>
+
+                <input type="radio"
+                       id="high"
+                       name="urgency"
+                       value="High">
+
+                <label for="high">High</label>
+
+                <br><br>
+
+                <label for="details">Additional Details</label><br>
+
+                <textarea
+                    id="details"
+                    name="details"
+                    rows="5"
+                    cols="40">
+                </textarea>
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Student Affairs Department. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
